@@ -6,7 +6,8 @@
 			<Image id="idStuImage" src="{image}" width="10em" decorative="false" press="handleImage3Press"/>
 			<sf:SimpleForm id="SimpleFormDisplay354" layout="ResponsiveGridLayout" singleContainerFullSize="false">
 				<sf:content>
-					<Label text="Student ID"/>
+					<!--Issue#2 m1 <Label text="Student Id"/>-->
+					<Label text="Student ID#"/>
 					<Text text="{stuId}"/>
 					<Label text="Name"/>
 					<Text text="{stuName}"/>
