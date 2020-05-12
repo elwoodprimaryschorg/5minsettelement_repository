@@ -3,7 +3,8 @@
 	<Page id="idStuHeaderPage" title="Students">
 		<content>
 			<List id="idList" items="{/students}" mode="SingleSelectMaster" selectionChange="onItemPress">
-				<ObjectListItem intro="{stuName}" number="{stuId}"/>
+				<!--commented M1 isssue@1 <ObjectListItem intro="{stuName}" number="{stuId}"/>-->
+				<ObjectListItem intro="{stuName}"/>
 			</List>
 		</content>
 	</Page>
