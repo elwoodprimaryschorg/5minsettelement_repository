@@ -1,0 +1,123 @@
+{
+	"_version": "1.12.0",
+	"sap.app": {
+		"id": "studentRegisterAppDescNs.studentRegisterAdPn",
+		"type": "application",
+		"i18n": "i18n/i18n.properties",
+		"applicationVersion": {
+			"version": "1.0.0"
+		},
+		"title": "{{appTitle}}",
+		"description": "{{appDescription}}",
+		"sourceTemplate": {
+			"id": "ui5template.basicSAPUI5ApplicationProject",
+			"version": "1.40.12"
+		}
+	},
+	"sap.ui": {
+		"technology": "UI5",
+		"icons": {
+			"icon": "",
+			"favIcon": "",
+			"phone": "",
+			"phone@2": "",
+			"tablet": "",
+			"tablet@2": ""
+		},
+		"deviceTypes": {
+			"desktop": true,
+			"tablet": true,
+			"phone": true
+		}
+	},
+	"sap.ui5": {
+		"flexEnabled": false,
+		"rootView": {
+			"viewName": "studentRegisterAppDescNs.studentRegisterAdPn.view.stuRegView",
+			"type": "XML",
+			"async": true,
+			"controlId": "differentidStuRegSplitApp",
+			"id": "anythingtuRegView"
+		},
+		"dependencies": {
+			"minUI5Version": "1.65.6",
+			"libs": {
+				"sap.ui.layout": {},
+				"sap.ui.core": {},
+				"sap.m": {}
+			}
+		},
+		"contentDensities": {
+			"compact": true,
+			"cozy": true
+		},
+		"models": {
+			"i18n": {
+				"type": "sap.ui.model.resource.ResourceModel",
+				"settings": {
+					"bundleName": "studentRegisterAppDescNs.studentRegisterAdPn.i18n.i18n"
+				}
+			},
+			"": {
+				"type": "sap.ui.model.json.JSONModel",
+				"settings": {},
+				"uri": "data/mockData/studentRegister.json",
+				"preload": true
+			}
+		},
+		"resources": {
+			"css": [
+				{
+					"uri": "css/style.css"
+				}
+			]
+		},
+		"routing": {
+			"config": {
+				"routerClass": "sap.m.routing.Router",
+				"viewType": "XML",
+				"async": true,
+				"viewPath": "studentRegisterAppDescNs.studentRegisterAdPn.view",
+				"controlId": "9876653anyidStuRegSplitApp"
+			},
+			"routes": [
+				{
+					"name": "masterRoute",
+					"pattern": "",
+					"target": [
+						"targetStuHeader"
+					]
+				},
+				{
+					"name": "detailRoute",
+					"pattern": "detailPattern/{zstuId}",
+					"target": [
+						"targetStuHeader",
+						"targetStuItem"
+					]
+				}
+			],
+			"targets": {
+				"targetStuHeader": {
+					"viewType": "XML",
+					"viewName": "stuHeader",
+					"controlAggregation": "masterPages",
+					"controlId": "sameidStuRegSplitApp",
+					"viewLevel": 1
+				},
+				"targetStuItem": {
+					"viewType": "XML",
+					"viewName": "stuItem",
+					"viewId": "idStuItemView",
+					"controlAggregation": "detailPages",
+					"controlId": "sameidStuRegSplitApp",
+					"viewLevel": 2
+				},
+				"Detail": {
+					"viewType": "XML",
+					"viewName": "Detail"
+				}
+			}
+		}
+	}
+}

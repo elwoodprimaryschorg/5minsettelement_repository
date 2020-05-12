@@ -1,0 +1,35 @@
+{
+	"students": [{
+			"stuId": "PP4",
+			"stuName": "Hanifa Maryam",
+			"stuAddress": "4/4 Southey St, Elwood",
+			"stuPostCode": "3184",
+			"stuTeacher": "Sarah Price",
+			"image": "data/mockData/pics/PP4.jpg"
+		},
+		{
+			"stuId": "1A3",
+			"stuName": "Safiya Maryam",
+			"stuAddress": "3/4 Southey St, Elwood",
+			"stuPostCode": "3184",
+			"stuTeacher": "Ariane DePieri",
+			"image": "data/mockData/pics/1A3.jpg"
+		},
+		{
+			"stuId": "3R2",
+			"stuName": "Yumna Maryam",
+			"stuAddress": "2/4 Southey St, Elwood",
+			"stuPostCode": "3184",
+			"stuTeacher": "Rick McConchie",
+			"image": "data/mockData/pics/3R2.jpg"
+		},
+		{
+			"stuId": "5B1",
+			"stuName": "Wisam Idrees Mohammed",
+			"stuAddress": "1/4 Southey St, Elwood",
+			"stuPostCode": "3184",
+			"stuTeacher": "Billy Godfrey",
+			"image": "data/mockData/pics/5B1.jpg"
+		}
+	]
+}
